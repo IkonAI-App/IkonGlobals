@@ -1,6 +1,6 @@
 from pynamodb.models import Model
 from pynamodb.attributes import UnicodeAttribute, ListAttribute
-from utils.utils import random_id
+from ..utils.utils import random_id
 
 
 class Song(Model):

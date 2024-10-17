@@ -4,12 +4,12 @@ from pynamodb.attributes import (UnicodeAttribute, NumberAttribute, UTCDateTimeA
 from pynamodb.indexes import GlobalSecondaryIndex, AllProjection
 from pynamodb.models import Model
 
-from utils.utils import random_id
-from utils.embedding_utils import delete_item_from_index, create_update_item, \
+from ..utils.utils import random_id
+from ..utils.embedding_utils import delete_item_from_index, create_update_item, \
     get_embedding_from_bedrock_cohere, speaker_to_text
-from utils.utils import sigmoid
+from ..utils.utils import sigmoid
 
-from IkonGlobals.settings import MINIMUM_SCORE, SPEAKER_INDEX
+from ..settings import MINIMUM_SCORE, SPEAKER_INDEX
 
 
 class SentenceLanguageIndex(GlobalSecondaryIndex):

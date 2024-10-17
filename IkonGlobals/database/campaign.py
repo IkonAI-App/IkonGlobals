@@ -4,7 +4,7 @@ from pynamodb.attributes import UnicodeAttribute, MapAttribute, UTCDateTimeAttri
 from pynamodb.models import Model
 from pytz import timezone
 
-from utils.utils import random_id
+from ..utils.utils import random_id
 
 
 class Submission(MapAttribute):

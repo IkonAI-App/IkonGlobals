@@ -1,4 +1,4 @@
-from utils.sentry_tool import manage_exception
+from .sentry_tool import manage_exception
 import math
 
 def random_id(lenght=10, is_str=True, is_uuid=False):

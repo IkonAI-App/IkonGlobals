@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="IkonGlobals",
-    version="1.0.1",
+    version="1.0.4",
     packages=find_packages(),
     description="A package to hold all of the data structures and functions common to other ikon repos",
     long_description=open('README.md').read(),
@@ -22,9 +22,9 @@ setup(
         "pytz>=2022.7.1",
         "boto3>=1.34.82",
         "pycountry>=24.6.1",
-        "opensearch-py>=2.6.0",
+        "opensearch-py==2.6.0",
         "sentry-sdk>=2.16.0",
-        "Werkzeug>=3.0.4",
+        "Werkzeug==2.2.2",
 
     ],
 )

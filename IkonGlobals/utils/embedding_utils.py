@@ -4,9 +4,9 @@ import boto3
 import pycountry
 from opensearchpy import OpenSearch, RequestsHttpConnection, AWSV4SignerAuth
 
-from database.song import Song
-from utils.sentry_tool import manage_exception
-from settings import DATABASE_HOST, REGION, SERVICE
+from ..database.song import Song
+from ..utils.sentry_tool import manage_exception
+from ..settings import DATABASE_HOST, REGION, SERVICE
 
 
 class DeleteItemException(Exception):

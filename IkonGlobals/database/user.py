@@ -6,7 +6,7 @@ from pynamodb.indexes import GlobalSecondaryIndex, AllProjection
 from pynamodb.models import Model
 from pynamodb_attributes import UnicodeEnumAttribute
 
-from utils.utils import random_id
+from ..utils.utils import random_id
 
 
 class UserStatus(Enum):

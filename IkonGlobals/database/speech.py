@@ -3,7 +3,7 @@ from datetime import datetime
 from pynamodb.attributes import (UnicodeAttribute, NumberAttribute, UTCDateTimeAttribute, BooleanAttribute)
 from pynamodb.models import Model
 from pynamodb.indexes import GlobalSecondaryIndex, AllProjection
-from utils.utils import random_id
+from ..utils.utils import random_id
 
 
 class SpeakerIdIndex(GlobalSecondaryIndex):
